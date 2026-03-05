@@ -3,7 +3,27 @@ import { NextResponse } from "next/server";
 let catches: any[] = [];
 
 export async function GET() {
-  return NextResponse.json(catches);
+
+  const totalFish = catches.length;
+
+  const totalMoney = catches.reduce(
+    (sum, c) => sum + (c.value || 0),
+    0
+  );
+
+  const biggestFish = catches.reduce((max, c) => {
+    if (!max) return c;
+    return c.weight > max.weight ? c : max;
+  }, null);
+
+  return NextResponse.json({
+    catches,
+    stats: {
+      totalFish,
+      totalMoney,
+      biggestFish
+    }
+  });
 }
 
 export async function POST(req: Request) {
@@ -19,9 +39,7 @@ export async function POST(req: Request) {
   };
 
   catches.unshift(catchEntry);
-
-  // max 50 speichern
-  catches = catches.slice(0, 50);
+  catches = catches.slice(0, 100);
 
   console.log("New Catch:", catchEntry);
 

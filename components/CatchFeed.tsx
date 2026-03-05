@@ -35,7 +35,9 @@ export default function CatchFeed() {
 
       <div className="space-y-2">
 
-        {catches.map((c, i) => (
+        {catches
+  .filter(c => c.fish && c.fish.trim() !== "")
+  .map((c, i) => (
 
           <div key={i} className="text-sm text-gray-300">
 
@@ -46,6 +48,8 @@ export default function CatchFeed() {
 )}
 <div className="text-xs text-gray-500">
   {Math.floor((Date.now() - c.time) / 1000)}s ago
+
+  
 </div>
           </div>
 
