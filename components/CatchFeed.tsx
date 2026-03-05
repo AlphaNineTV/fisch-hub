@@ -12,8 +12,6 @@ export default function CatchFeed() {
 
     const data = await res.json();
     setCatches(data.catches);
-
-    setCatches(data);
   }
 
   useEffect(() => {
