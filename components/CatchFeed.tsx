@@ -11,6 +11,7 @@ export default function CatchFeed() {
     const res = await fetch("/api/catch");
 
     const data = await res.json();
+    setCatches(data.catches);
 
     setCatches(data);
   }
