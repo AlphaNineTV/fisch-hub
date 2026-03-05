@@ -1,10 +1,12 @@
 import Navbar from "../components/Navbar"
+import CatchFeed from "@/components/CatchFeed"
 
 export default function Home() {
   return (
     <main className="bg-gradient-to-b from-black via-gray-950 to-black text-white min-h-screen">
 
       <Navbar />
+      <CatchFeed />
 
       {/* HERO */}
       <section className="max-w-6xl mx-auto py-32 px-10">
