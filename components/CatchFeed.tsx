@@ -41,10 +41,12 @@ export default function CatchFeed() {
 
             🎣 {c.fish} | {c.weight}kg | +{c.value}C$
 
-            {c.mutations?.length > 0 && (
-              <> | {c.mutations.join(", ")}</>
-            )}
-
+{c.mutations?.length > 0 && (
+  <> | {c.mutations.map((m:any)=>`✨ ${m}`).join(" | ")}</>
+)}
+<div className="text-xs text-gray-500">
+  {Math.floor((Date.now() - c.time) / 1000)}s ago
+</div>
           </div>
 
         ))}
