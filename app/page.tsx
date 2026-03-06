@@ -25,7 +25,7 @@ export default function Home() {
             href="/download"
             className="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-lg font-semibold transition shadow-lg shadow-blue-600/30"
           >
-            Download Tracker
+            Download Tracker/COMINGSOON
           </a>
 
           <a
