@@ -64,7 +64,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="bg-gray-900/60 backdrop-blur p-6 rounded-lg border border-gray-800 hover:border-blue-500 transition">
             <h3 className="text-xl mb-3 font-semibold">
               Profit Analytics
             </h3>
@@ -73,7 +73,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+          <div className="bg-gray-900/60 backdrop-blur p-6 rounded-lg border border-gray-800 hover:border-blue-500 transition">
             <h3 className="text-xl mb-3 font-semibold">
               Meta Tools
             </h3>
