@@ -32,7 +32,7 @@ export default function CatchFeed() {
         🎣 Live Catches
       </h2>
 
-      <div className="space-y-2">
+      <div className="space-y-2 max-h-[450px] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-zinc-700">
 
         {catches
   .filter(c => c.fish && c.fish.trim() !== "")

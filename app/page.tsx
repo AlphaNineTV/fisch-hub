@@ -1,5 +1,4 @@
 import Navbar from "../components/Navbar"
-import CatchFeed from "@/components/CatchFeed"
 import GlobalStats from "@/components/GlobalStats";
 
 export default function Home() {
@@ -8,10 +7,17 @@ export default function Home() {
 
       <Navbar />
       <GlobalStats />
-      <CatchFeed />
 
 
       {/* HERO */}
+
+
+      <a
+  href="/catches"
+  className="border border-gray-700 hover:border-gray-500 px-8 py-4 rounded-lg transition"
+>
+  View Live Catch Feed
+</a>
       <section className="max-w-6xl mx-auto py-32 px-10">
 
 <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">

@@ -10,6 +10,12 @@ export default function Navbar() {
         <a href="/" className="hover:text-white">Home</a>
         <a href="/download" className="hover:text-white">Download</a>
         <a href="/tools" className="hover:text-white">Tools</a>
+        <a
+  href="/catches"
+  className="text-gray-300 hover:text-white transition"
+>
+  Live Catches
+</a>
       </div>
 
     </nav>
