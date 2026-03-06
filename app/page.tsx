@@ -1,23 +1,14 @@
 import Navbar from "../components/Navbar"
-import GlobalStats from "@/components/GlobalStats";
 
 export default function Home() {
   return (
     <main className="bg-gradient-to-b from-black via-gray-950 to-black text-white min-h-screen">
 
       <Navbar />
-      <GlobalStats />
 
 
       {/* HERO */}
 
-
-      <a
-  href="/catches"
-  className="border border-gray-700 hover:border-gray-500 px-8 py-4 rounded-lg transition"
->
-  View Live Catch Feed
-</a>
       <section className="max-w-6xl mx-auto py-32 px-10">
 
 <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
@@ -43,6 +34,13 @@ export default function Home() {
           >
             Explore Tools
           </a>
+
+          <a
+  href="/catches"
+  className="border border-gray-700 hover:border-gray-500 px-8 py-4 rounded-lg transition"
+>
+  View Live Catch Feed
+</a>
 
         </div>
 

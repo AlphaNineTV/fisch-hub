@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar"
 import CatchFeed from "@/components/CatchFeed"
+import GlobalStats from "@/components/GlobalStats"
 
 export default function CatchesPage() {
 
@@ -15,7 +16,11 @@ export default function CatchesPage() {
           🎣 Live Catch Feed
         </h1>
 
-        <CatchFeed />
+        <GlobalStats />
+
+        <div className="mt-12">
+          <CatchFeed />
+        </div>
 
       </section>
 
